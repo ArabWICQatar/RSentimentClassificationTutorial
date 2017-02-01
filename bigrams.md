@@ -125,15 +125,16 @@ Let us now create a data frame DF, and split it into training and test sets. To 
 ##### **Code Block 6**
 
 ```
+#create a dataframe to hold our data
 DF <- as.data.frame(m, stringsAsFactors = FALSE)
 nrow(DF)DF=as.matrix(DF)
 tdf=as.data.frame(t(DF))
 tdf=cbind(tdf,input[,2])
-
-#continued on next page
 len=ncol(tdf)
 header=c(1:(len-1))
 header=c(header,"Class")
+
+#create svm model with train and test sets
 colnames(tdf)=header
 trainset <- tdf[1:1800,]
 testset <- tdf[1801:2000,]
