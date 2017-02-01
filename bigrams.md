@@ -77,7 +77,7 @@ The  “tm" package works with a data structure called Corpus. We will first con
 corp=Corpus(VectorSource(some_txt))
 as.VCorpus(corp)
 corp=tm_map(corp, removeWords, stopwords('english'))
-inspect(corp)corp <- tm_map(corp, removePunctuation) 
+corp <- tm_map(corp, removePunctuation) 
 inspect(corp) 
 
 #create the bigrams and Term document matrix
