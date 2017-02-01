@@ -16,26 +16,23 @@ The data is made up of the following attributes.
   `> ?Titanic`
 
 * View the Titanic Dataset  
-  `> View(Titanic)`            
+  `> View(Titanic)`
 
-* **Check if there were higher survival rates in females.** _The 3rd column is the index of the Gender feature - Female or Male, and the 4th column indicates the Survival- Yes / No._ 
+* **Check if there were higher survival rates in females.** _The 3rd column is the index of the Gender feature - Female or Male, and the 4th column indicates the Survival- Yes / No._
 
 * `> apply(Titanic, c(2, 4), sum)`
 
-                ** Survived**
+                 `   `**`Survived?`**`   `
 
-  **Sex        No       Yes**  
-  **Male **     1364   367  
-  **Female**  126     344
+   **`Sex        No       Yes`**`  
+  `**`Male `**`   1364      367    
+  `**`Female`**`  126       344`
 
 Clearly females were not as lucky as males.
 
+**Check if there were higher survival rates in children.**
 
-
-**Check if there were higher survival rates in children.** 
-
-HINT: _The 3rd column is the index of the Age feature - Child or Adult, and the 4th column indicates the Survival - Yes / No._   
-  
+HINT: _The 3rd column is the index of the Age feature - Child or Adult, and the 4th column indicates the Survival - Yes / No._
 
 ---
 
