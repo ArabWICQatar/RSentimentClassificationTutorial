@@ -44,7 +44,7 @@ as.VCorpus(corp)
 corp=tm_map(corp, removeWords, stopwords('english'))
 corp <- tm_map(corp, removePunctuation)
 
-#create the bigrams and Term document matrix and a wordcloud
+#create the unigrams and Term document matrix and a wordcloud
 UnigramTokenizer <- function(y) NGramTokenizer(y, Weka_control(min = 1, max = 1))
 tdm <- TermDocumentMatrix(corp, control = list(tokenize = UnigramTokenizer))
 m= inspect(tdm)
