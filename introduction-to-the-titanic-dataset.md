@@ -12,28 +12,32 @@ The data is made up of the following attributes.
 
 ![](https://docs.google.com/drawings/d/slq46kgeIoEIJKfKT-1y32A/image?w=213&h=119&rev=22&ac=1)
 
-* To know more about the dataset
+* To know more about the dataset  
   `> ?Titanic`
 
 * View the Titanic Dataset  
-  `> View(Titanic)`
+  `> View(Titanic)`            
 
-* **Check if there were higher survival rates in children.** _The 3rd column is the index of the Age feature - Child or Adult, and the 4th column indicates the Survival - Yes / No._ 
-  `> apply(Titanic, c(3, 4), sum)`               **Survived** **Age      No      Yes** **Child**    52       57 **Adult** 1438     654
-  _**Well, they weren't lucky!**_
+* **Check if there were higher survival rates in females.** _The 3rd column is the index of the Gender feature - Female or Male, and the 4th column indicates the Survival- Yes / No._ 
 
+* `> apply(Titanic, c(2, 4), sum)`
 
+                ** Survived**
 
-* **Check if there were higher survival rates in females.** _The 3rd column is the index of the Gender feature - Female or Male, and the 4th column indicates the Survival- Yes / No._ `> apply(Titanic, c(2, 4), sum)`
-  ```
-     **         Survived**
-  ```
-
-  **Sex        No       Yes**
-  **Male **     1364   367
+  **Sex        No       Yes**  
+  **Male **     1364   367  
   **Female**  126     344
+
+Clearly females were not as lucky as males.
+
+
+
+**Check if there were higher survival rates in children.** 
+
+HINT: _The 3rd column is the index of the Age feature - Child or Adult, and the 4th column indicates the Survival - Yes / No._   
+  
 
 ---
 
-Clearly females were not as lucky as males.\*\*\_
+
 
