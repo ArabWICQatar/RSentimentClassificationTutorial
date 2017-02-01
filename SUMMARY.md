@@ -1,5 +1,3 @@
-# 
-
 # Summary
 
 * [Introduction](README.md)
@@ -14,7 +12,4 @@
 * [Bigrams](bigrams.md)
 * [Phase 2 in WEKA - Unigrams](phase-2-in-weka-unigrams.md)
 * [Materials To Get You Started](materials-to-get-you-started.md)
-* [Installation Steps](installation-steps.md)
-
-
 
