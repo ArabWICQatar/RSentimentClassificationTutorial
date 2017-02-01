@@ -113,7 +113,8 @@ _**We can see that some of the words that will influence the classification are 
 
 ```
 OPTIONAL: Did not like the colours in the plot? Let’s make it colorful!
-> par(bg = "black")> wordcloud(names(v), v, colors = c("tomato","wheat", "lightblue"), scale = c(6, 0.5), 
+> par(bg = "black")
+> wordcloud(names(v), v, colors = c("tomato","wheat", "lightblue"), scale = c(6, 0.5), 
 random.color = TRUE, rot.per = 0.5, min.freq = 10, font = 2, family = "serif")
 ```
 
