@@ -12,7 +12,7 @@ Copy paste the code section into Unigrams.R It is similar to Bigrams.R.
 
 ```
 #create a vector of all the packages you want to load
-packs <- c("tm","tau","qdap","RWeka","wordcloud”)
+packs <- c("tm","tau","qdap","RWeka", "wordcloud")
 lapply(packs, require, character.only = TRUE)
 
 #load the dataset as a matrix
