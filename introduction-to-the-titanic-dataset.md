@@ -20,7 +20,7 @@ The data is made up of the following attributes.
 
 * **Check if there were higher survival rates in females.** _The 3rd column is the index of the Gender feature - Female or Male, and the 4th column indicates the Survival- Yes / No._
 
-* `> apply(Titanic, c(2, 4), sum)`
+      `> apply(Titanic, c(2, 4), sum)`
 
 | SEX | SURVIVED: YES? | SURVIVED: NO? |
 | :---: | :---: | :---: |
