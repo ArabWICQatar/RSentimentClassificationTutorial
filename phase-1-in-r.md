@@ -6,9 +6,7 @@ In this phase we will use the simple and popular IRIS dataset in R. We will run 
 
 This dataset has the Petal and Sepal, length and width as features for three different types of flowers: Versicolor, Setosa and Virginica.
 
-![](/assets/iris_petal_sepal.png)   ![](/assets/iris_with_labels.jpg)
-
-
+                                            ![](/assets/iris_petal_sepal.png)   
 
 * We will first examine the dataset in R. For more details about the dataset, type the following command.  
   `> ?iris`  
@@ -36,8 +34,8 @@ This dataset has the Petal and Sepal, length and width as features for three dif
 | 4.6 | 3.1 | 1.5 | 0.2 | Setosa |
 | 5.0 | 3.6 | 1.4 | 0,2 | Setosa |
 
-* Let us get a summary of all the features \(each column\) in the dataset. This gives us details like minimum,median, maximum values etc. of the features. We can also see there are 50 observations of each flower under the Species tab.   
-  `> summary(iris)`   
+* Let us get a summary of all the features \(each column\) in the dataset. This gives us details like minimum,median, maximum values etc. of the features. We can also see there are 50 observations of each flower under the Species tab.  
+  `> summary(iris)`  
   _Output will be shown in the Console._
 
 * Now, that we have a general idea of the dataset, let us view the entire dataset.  
