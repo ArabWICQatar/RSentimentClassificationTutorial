@@ -22,13 +22,14 @@ The data is made up of the following attributes.
 
 * `> apply(Titanic, c(2, 4), sum)`
 
-                 `   `**`Survived?`**`   `
-
-   **`Sex        No       Yes`**`  
-  `**`Male `**`   1364      367    
-  `**`Female`**`  126       344`
+| SEX | SURVIVED: YES?  | SURVIVED: NO? |
+| :--- | :--- | :--- |
+| MALE | 1364 | 367 |
+| FEMALE | 126 | 344 |
 
 Clearly females were not as lucky as males.
+
+
 
 **Check if there were higher survival rates in children.**
 
