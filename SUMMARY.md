@@ -8,4 +8,5 @@
 * [Introduction to the TITANIC dataset](introduction-to-the-titanic-dataset.md)
 * [NaiveBayes Classifier on the Titanic](naivebayes-classifier-on-the-titanic.md)
 * [AIRLINE Dataset](airline-dataset.md)
+* [Bigrams](bigrams.md)
 
