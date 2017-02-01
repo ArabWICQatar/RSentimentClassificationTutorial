@@ -2,14 +2,12 @@
 
 Let us start by installing the following required packages. Go to _**Tools -&gt; Install Packages**_** **and install each of these packages one-by-one.
 
-* [ ] tm
-* [ ] tau
-* [ ] qdap
-* [ ] RWeka
-* [ ] e1071
-* [ ] wordcloud
-
-
+* tm
+* tau
+* qdap
+* RWeka
+* e1071
+* wordcloud
 
 Let us now load all of these packages at one go!
 
@@ -22,7 +20,6 @@ packs <- c("tm","tau","qdap","RWeka")lapply(packs, require, character.only = TRU
 
 _The lapply function is very useful. Why not read about it by typing&gt; ?lapply_
 
-  
 **Code Block 2**
 
 ```
@@ -30,8 +27,6 @@ _The lapply function is very useful. Why not read about it by typing&gt; ?lapply
 inputText = read.csv(file = "pathToFile/AirlineTweets.csv", header = TRUE, sep = ",")
 input=as.matrix(inputText)
 ```
-
-
 
 Before we move onto the next step, let us look at the data.
 
@@ -47,7 +42,7 @@ The tweets start by @AirlineName and is then followed by the rest of the tweet.
 
 Let us start by pre-processing the data to remove stop-words, punctuation, numbers, links, spaces and of course the @AirlineName.
 
-#####  Code Block 3
+##### Code Block 3
 
 ```
 # remove retweet entities
@@ -92,17 +87,13 @@ m= inspect(tdm)
 
 _We have now created the Term Document Matrix tdm using the bigrams as terms._
 
-
-
-Let us now look at the frequently used bigrams in our tweets. Type the following, 
+Let us now look at the frequently used bigrams in our tweets. Type the following,
 
 `> v = sort(rowSums(m), decreasing = TRUE)`
 
 `> v`
 
 Was that list too long? Why not create a simple wordcloud?
-
-
 
 ##### Code Block 5
 
@@ -112,8 +103,6 @@ set.seed(1234)
 #you can change the frequency of the terms to a number of your choice
 wordcloud(names(v), v, min.freq = 10)
 ```
-
-
 
 _**You should be able to see this word cloud.**_
 
@@ -158,7 +147,4 @@ confusionMatrix(xtab)
 _**Check the confusion matrix. Are you getting an accuracy of ~65%? Not happy?**_
 
 Why not try unigrams now?
-
-  
-
 
