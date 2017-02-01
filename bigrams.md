@@ -129,7 +129,8 @@ Let us now create a data frame DF, and split it into training and test sets. To 
 ```
 #create a dataframe to hold our data
 DF <- as.data.frame(m, stringsAsFactors = FALSE)
-nrow(DF)DF=as.matrix(DF)
+nrow(DF)
+DF=as.matrix(DF)
 tdf=as.data.frame(t(DF))
 tdf=cbind(tdf,input[,2])
 len=ncol(tdf)
