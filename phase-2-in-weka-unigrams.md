@@ -45,16 +45,22 @@ corp=tm_map(corp, removeWords, stopwords('english'))
 corp <- tm_map(corp, removePunctuation)
 
 #create the bigrams and Term document matrix and a wordcloud
-UnigramTokenizer <- function(y) NGramTokenizer(y, Weka_control(min = 2, max = 2))
+UnigramTokenizer <- function(y) NGramTokenizer(y, Weka_control(min = 1, max = 1))
 tdm <- TermDocumentMatrix(corp, control = list(tokenize = UnigramTokenizer))
-m= inspect(tdm)wordcloud(names(v), v, min.freq = 10)
+m= inspect(tdm)
+
+library(wordcloud)
+set.seed(1234)
+v = sort(rowSums(m), decreasing = TRUE)
+#you can change the frequency of the terms to a number of your choice.
+wordcloud(names(v), v, min.freq = 10)
+
+#prepare to write the csv file 
 DF <- as.data.frame(m, stringsAsFactors = FALSE)
 nrow(DF)
 DF=as.matrix(DF)
 tdf=as.data.frame(t(DF))
 tdf=cbind(tdf,input[,2])
-
-#continued on next page
 len=ncol(tdf)
 header=c(1:(len-1))
 header=c(header,"Class")
@@ -66,15 +72,11 @@ _**Make sure to change the path to the file.**_
 
 _**Say bye to R, and hello to Weka! :\)**_
 
-
-
 ```
 FUN: Worried you have Alzheimer’s? Take this test to find out.
 > alzheimer_test(char1 = c("9", "O", "M", "I", "F","D"), 
 char2 = c("6", "C", "N", "T", "E", "O"), nr = 5, nc = 10, seed = NULL)
 ```
-
-
 
 ### Applying Filters
 
@@ -82,25 +84,19 @@ Let us start by opening Weka! You will get the following screen.
 
 ![](https://lh5.googleusercontent.com/icg2Jc7xXFaXxZoMGMOROr-ykyZvsHH1-8ldEtwOzJLVj8xnK7MEkl7zv113q8uCnI3dtnhQk0gUcFk0dSY3WKYJCvUlDNZHIQA88tZZj_A2OOtt5VLaBm4Cpf2iYKr_tpoPJmY "Screenshot 2017-01-23 15.41.24.png")
 
-
-
 _**Click on the explorer tab.**_
-
-
 
 _You will see the following screen._
 
 ![](https://lh5.googleusercontent.com/M_4SdExaNdPRtp0NAuttJq3MuS7daRmWwd91EqRAH9KnMdb61EbVd645VjNZlQAVGnzeP7UswnfsKcTiqGjGEpN4GuqO4upSi2dcIDxp4-Ze90dHMhVJwJNGuCxIhJuoRU3UgZ0 "Screenshot 2017-01-23 15.43.44.png")
 
-
-
-1. Click on the _**“Open File” **_button. This will open a small window.
+1. Click on the \_**“Open File” **\_button. This will open a small window.
 
 2. Browse to the folder where the _**Unigram.csv**_ file is located.
 
-3. Select CSV as the option in the_** “Files Of Type” **_dropdown list box \(shown below\).![](https://lh6.googleusercontent.com/hCAE-8mYqbcb8VM-lzWup6ev94uRMf-kgM8MiyQnQ6EAnOddNGRLKRdn0578tNQDup5wp59tLnu2RiS5T2svY9BvdRWjZMG40QXkdkMPJjezPTAk1T8sD3MaXvGs30_w8f9Mg1w "Screenshot 2017-01-23 15.44.08.png")
+3. Select CSV as the option in the\_** “Files Of Type” **\_dropdown list box \(shown below\).![](https://lh6.googleusercontent.com/hCAE-8mYqbcb8VM-lzWup6ev94uRMf-kgM8MiyQnQ6EAnOddNGRLKRdn0578tNQDup5wp59tLnu2RiS5T2svY9BvdRWjZMG40QXkdkMPJjezPTAk1T8sD3MaXvGs30_w8f9Mg1w "Screenshot 2017-01-23 15.44.08.png")
 
-4. Wait for the file to load. Once loaded you will see all of the attributes under the _**“Attributes” **_area \(shown below\).![](https://lh5.googleusercontent.com/aEq-iR62MD8cZK_zycg5rsQl7dHoesj1PcKu-JfmahwiaWVFnHrJ0BPCC759jdrUtpard3TtgjqgjLFV-1VnhO71x9H1N4zOV6_rDVUL37FRxHpTIWacb3lOPNyhjDQ5zVpGNjQ "Screenshot 2017-01-23 15.53.27.png")
+4. Wait for the file to load. Once loaded you will see all of the attributes under the \_**“Attributes” **\_area \(shown below\).![](https://lh5.googleusercontent.com/aEq-iR62MD8cZK_zycg5rsQl7dHoesj1PcKu-JfmahwiaWVFnHrJ0BPCC759jdrUtpard3TtgjqgjLFV-1VnhO71x9H1N4zOV6_rDVUL37FRxHpTIWacb3lOPNyhjDQ5zVpGNjQ "Screenshot 2017-01-23 15.53.27.png")
 
 5. Click on attribute 1. You can see the minimum/maximum value along with other details under _**“Selected Attribute”**_. You can see that the type is _“numeric”._
 
@@ -126,8 +122,6 @@ You can run various classifiers from Weka.
 
 _This will run the ZeroR classifier by default. Why not choose other classifiers?_
 
-
-
 You will find _**bayes-&gt;NaiveBayes, function -&gt; SVM, lazy -&gt; IbK \(KNN\)**_ and a whole lot of other classifiers, when you click on the choose button. We will use the J48 tree classifier in the next steps.
 
 _We have been using the cross-validation techniques for so long. Let us move to % split next._
@@ -144,15 +138,11 @@ Let us try this technique.
 
 ![](https://lh6.googleusercontent.com/4iOBU73azGu_m_u7Vn3Ck7Amgtts9XO4XZOT3JPDLAuxzB6EM4jlVCesA7DoMDnUp3eOWdQUmFFd4Qp182RS9fd9Hs0ZvXd27ezpXljWRSNJJbhhRy_KWGWQGIx0EMzxGGs_NK8 "Screenshot 2017-01-23 16.15.14.png")
 
-
-
 1. Choose the J48 classifier fromChoose -&gt; trees -&gt; J48.
 
 2. Startthe classifier.
 
 Congratulations! Your model just achieved an accuracy of ~85%!!
-
-
 
 ### Visualize the Tree
 
@@ -169,7 +159,4 @@ Congratulations! Your model just achieved an accuracy of ~85%!!
 3. You can now view the tree \(similar to the one below\).
 
 ![](https://lh5.googleusercontent.com/XNUaE2-WIOtoLiHvgqjqYSHpjBfZUR2Wj7ruy_8zedEDkyDRE3F0KtTkmx7ZT1pdq8VYNwVgP3yeJwiYLQFljeM0mtAlsMDFLd2x1yUJ7nFnLIiNleJzUj6qTOHHWPK-ktEVHMg "Screenshot 2017-01-23 16.31.46.png")
-
-  
-
 
