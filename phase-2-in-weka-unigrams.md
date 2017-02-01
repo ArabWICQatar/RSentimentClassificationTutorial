@@ -53,7 +53,7 @@ library(wordcloud)
 set.seed(1234)
 v = sort(rowSums(m), decreasing = TRUE)
 #you can change the frequency of the terms to a number of your choice.
-wordcloud(names(v), v, min.freq = 10)
+wordcloud(names(v), v, min.freq = 15)
 
 #prepare to write the csv file 
 DF <- as.data.frame(m, stringsAsFactors = FALSE)
