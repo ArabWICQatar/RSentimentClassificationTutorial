@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Installation Steps](installation-steps.md)
 * [Quick Start With RStudio](quick-start-with-rstudio.md)
-* [Phase 1 in R](phase-1-in-r.md)
+* [Introduction to the IRIS Dataset](phase-1-in-r.md)
 * [Create a Decision Tree](create-a-decision-tree.md)
 * [SVM Classifier - IRIS Dataset](svm-classifier-iris-dataset.md)
 * [Introduction to the TITANIC dataset](introduction-to-the-titanic-dataset.md)
@@ -13,6 +13,4 @@
 * [Phase 2 in WEKA - Unigrams](phase-2-in-weka-unigrams.md)
 * [Materials To Get You Started](materials-to-get-you-started.md)
 * [Next Steps: Challenge Yourself](/next-steps-challenge-yourself.md)
-
-
 
