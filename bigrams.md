@@ -1,4 +1,4 @@
-### BIGRAMS
+### Bigrams - Pre-processing, Feature Extraction and Classification
 
 Let us start by installing the following required packages. Go to _**Tools -&gt; Install Packages**_** **and install each of these packages one-by-one.
 
