@@ -9,4 +9,7 @@
 * [NaiveBayes Classifier on the Titanic](naivebayes-classifier-on-the-titanic.md)
 * [AIRLINE Dataset](airline-dataset.md)
 * [Bigrams](bigrams.md)
+* Phase 2 in WEKA - Unigrams
+* Phase 2 in WEKA - Unigrams
+* Phase 2 in WEKA - Unigrams
 
