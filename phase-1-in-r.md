@@ -11,49 +11,37 @@ This dataset has the Petal and Sepal, length and width as features for three dif
   _Output will be shown in the Plots and Files area._  
   Read the file to know more about the IRIS dataset.
 
-
-
 * We will now load the dataset, using the next command.  
   `> data(“iris”)`  
   _You can see that the dataset iris is loaded in the Environment and Workspace area._
 
-
-
 * Let us now check the size of the dataset - number of rows and columns.
-  `  > nrow(iris)   [1] 150   > ncol(iris)   [1] 5`
-
-
+  `> nrow(iris)   [1] 150   > ncol(iris)   [1] 5`
 
 * Let us now see the first few rows of the dataset, to understand the structure of the dataset. We can see that the dataset is made up of 5 features, namely,Sepal.Length, Sepal.Width, Petal.Length, Petal.Width and Species.
   `> head(iris)`
 
+Sepal.Length \| Sepal.Width\| Petal.Length\| Petal.Width\| Species
 
+-------------------\|----------------------\|---------------------\|-------------------\|--------------
 
- \|Sepal.Length \| Sepal.Width\| Petal.Length\| Petal.Width\| Species
+5.1 \|3.5\| 1.4 \|0.2 \|setosa
 
-------\|-------------------\|----------------------\|---------------------\|-------------------\|--------------
+4.9\| 3.0 \|1.4\| 0.2 \|setosa
 
-1 \|5.1 \|3.5\| 1.4 \|0.2 \|setosa
+4.7 \|3.2\| 1.3\| 0.2\| setosa
 
-2 \|4.9\| 3.0 \|1.4\| 0.2 \|setosa
+4.6\| 3.1\| 1.5\| 0.2\| setosa
 
-3 \|4.7 \|3.2\| 1.3\| 0.2\| setosa
+5.0 \|3.6\| 1.4\| 0.2 \|setosa
 
-4 \|4.6\| 3.1\| 1.5\| 0.2\| setosa
-
-5 \|5.0 \|3.6\| 1.4\| 0.2 \|setosa
-
-
-
-* Let us get a summary of all the features \(each column\) in the dataset. This gives us details like minimum,median, maximum values etc. of the features. We can also see there are 50 observations of each flower under the Species tab.
-  `> summary(iris)`
+* Let us get a summary of all the features \(each column\) in the dataset. This gives us details like minimum,median, maximum values etc. of the features. We can also see there are 50 observations of each flower under the Species tab.  
+  `> summary(iris)`  
   _Output will be shown in the Console._
 
-* Now, that we have a general idea of the dataset, let us view the entire dataset.
-  `> View(iris)`
+* Now, that we have a general idea of the dataset, let us view the entire dataset.  
+  `> View(iris)`  
   _Output will be shown in the Code Editor._
-
-
 
 _**Your IDE should like the following image, once you are done with all of the commands.**_
 
@@ -63,7 +51,7 @@ _**Your IDE should like the following image, once you are done with all of the c
 
 #### Install a package
 
-Let us now install the package_** “party” **_for creating a decision tree.
+Let us now install the package\_** “party” **\_for creating a decision tree.
 
 1. In the Menu bar, click on _**Tools -&gt; Install Packages.**_
 
