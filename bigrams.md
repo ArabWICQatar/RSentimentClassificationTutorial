@@ -15,7 +15,8 @@ Let us now load all of these packages at one go!
 
 ```
 #create a vector of all the packages you want to load
-packs <- c("tm","tau","qdap","RWeka")lapply(packs, require, character.only = TRUE)
+packs <- c("tm","tau","qdap","RWeka")
+lapply(packs, require, character.only = TRUE)
 ```
 
 _The lapply function is very useful. Why not read about it by typing&gt; ?lapply_
