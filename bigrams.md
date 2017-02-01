@@ -78,7 +78,6 @@ corp=Corpus(VectorSource(some_txt))
 as.VCorpus(corp)
 corp=tm_map(corp, removeWords, stopwords('english'))
 corp <- tm_map(corp, removePunctuation) 
-inspect(corp) 
 
 #create the bigrams and Term document matrix
 BigramTokenizer <- function(y) NGramTokenizer(y, Weka_control(min = 2, max = 2))
