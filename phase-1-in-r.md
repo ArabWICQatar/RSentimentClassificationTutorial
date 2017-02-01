@@ -20,7 +20,10 @@ This dataset has the Petal and Sepal, length and width as features for three dif
 
 
 * Let us now check the size of the dataset - number of rows and columns.  
-  `> nrow(iris)   [1] 150   > ncol(iris)   [1] 5`
+  `> nrow(iris)   `
+  `[1] 150   `
+  `> ncol(iris)   `
+  `[1] 5`
 
 
 
@@ -37,7 +40,9 @@ This dataset has the Petal and Sepal, length and width as features for three dif
 
 
 
-* Let us get a summary of all the features \(each column\) in the dataset. This gives us details like minimum,median, maximum values etc. of the features. We can also see there are 50 observations of each flower under the Species tab. `> summary(iris)` _Output will be shown in the Console._
+* Let us get a summary of all the features \(each column\) in the dataset. This gives us details like minimum,median, maximum values etc. of the features. We can also see there are 50 observations of each flower under the Species tab. 
+  `> summary(iris)` 
+  _Output will be shown in the Console._
 
 
 
