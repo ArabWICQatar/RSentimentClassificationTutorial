@@ -26,7 +26,7 @@ In the second half of the tutorial, we will classify a set of Tweets based on th
 
 This document has been written in such a way that it is easy to follow for a beginner. Here are some tips to get the most out of this document.
 
-1. Entire code scripts, airline dataset along with this document are available on our GitHub account:ArabWICQatar,which can be accessed from this page [https://github.com/ArabWICQatar](https://github.com/ArabWICQatar). These materials will be required for this tutorial. Feel free to “fork”.
+1. Entire code scripts, airline dataset along with this document are available on our _**GitHub account: ArabWICQatar**_,which can be accessed from this page [https://github.com/ArabWICQatar](https://github.com/ArabWICQatar). These materials will be required for this tutorial. Feel free to “fork”.
 
 2. All commands in the Rstudio prompt are marked with “&gt;”. If you find any line marked with “&gt;”, it is a command that can be typed into the Rstudio console.
 
