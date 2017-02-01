@@ -6,7 +6,7 @@ In this phase we will use the simple and popular IRIS dataset in R. We will run 
 
 This dataset has the Petal and Sepal, length and width as features for three different types of flowers: Versicolor, Setosa and Virginica.
 
-                                            ![](/assets/iris_petal_sepal.png)   
+![](/assets/IRIS.jpg)
 
 * We will first examine the dataset in R. For more details about the dataset, type the following command.  
   `> ?iris`  
