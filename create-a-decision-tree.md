@@ -4,26 +4,26 @@ Now that we have explored the IRIS dataset, let us create a decision tree.
 
 ##### We will go through this script line-by-line. Type each line in the R console as you encounter it.
 
-* **Step 1: Load the party package.**
-  &gt; library\(party\)
-  _You will see the ‘party’ package and a list of dependent packages loading._
+*  **Step 1: Load the party package.**  
+   &gt; library\(party\)  
+   _ You will see the ‘party’ package and a list of dependent packages loading._
 
-* **Step 2: Let us now load the IRIS dataset that is available in R.**  
-  &gt; data\(“iris”\)  
-  _You will see the IRIS dataset is loaded in the Environment and Workspace area._
+*  **Step 2: Let us now load the IRIS dataset that is available in R.**  
+   &gt; data\(“iris”\)  
+   _ You will see the IRIS dataset is loaded in the Environment and Workspace area._
 
-* **Step 3: Let us create the input data frame and assign the IRIS dataset to it.**  
+*  **Step 3: Let us create the input data frame and assign the IRIS dataset to it.**  
   `> input = iris`  
-  You will see the input dataframe is loaded in theEnvironment and Workspace area.The following command will give you the data structure of the variable.  
+   You will see the input dataframe is loaded in the Environment and Workspace area.  The following command will give you the data structure of the variable.  
   `class(input)`  
   `[1] “data.frame”`
 
-* **Step 4: Create the decision tree.**  
+*  **Step 4: Create the decision tree.**  
   `> output.tree <- ctree(Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width, data=iris)`  
-  _**The decision tree model is now created.**_  
-  Here, Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width tells R that Species \(the class of the flowers\) is dependent on the attributes Sepal.Length, Sepal.Width, Petal.Length and Petal.Width.
+   _** The decision tree model is now created.**_  
+   Here, Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width tells R that    Species \(the class of the flowers\) is dependent on the attributes Sepal.Length,  Sepal.Width, Petal.Length and Petal.Width.
 
-* **Step 5: Plot the tree**  
+*  **Step 5: Plot the tree**  
   `> plot(output.tree,type="simple")`  
   _You should be able to see the following plot in the “Files and Plots” area of the IDE._
 
