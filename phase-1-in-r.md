@@ -60,7 +60,7 @@ Let us now install the package **“party” **for creating a decision tree.
 
 4. Load the package _**fun**_ by typing the following command:
 
-`>library(fun)`
+> `library(fun)`
 
 ![](https://lh4.googleusercontent.com/zF_HT7Lg_grNEm5fTpu022iTGC4MVcEaAL2OyrkO_bcG3Is2zPQiUhnDT0XdDJkkRUde3ivRVZ3dd2CZssy5SNTQ6Rrk7Ew2CHQ7Na8XgRd1BNcnw77KKpG0x02vnnA62DhPOnQ "Screenshot 2017-01-17 00.59.45.png")
 
