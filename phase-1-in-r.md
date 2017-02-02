@@ -14,8 +14,8 @@ This dataset has the Petal and Sepal, length and width as features for three dif
   Read the file to know more about the IRIS dataset.
 
 * We will now load the dataset, using the next command.  
-  `> data("iris")`  
-  _You can see that the dataset iris is loaded in the Environment and Workspace area._
+  `> `data\("iris"\)  
+  You can see that the dataset iris is loaded in the Environment and Workspace area.
 
 * Let us now check the size of the dataset - number of rows and columns.  
   `> nrow(iris)`  
