@@ -4,15 +4,13 @@
 | :--- |
 
 
-
-
 _**Create a new script and save it as NaiveBayes. \(File -&gt; New Script\)**_
 
 The NaiveBayesTitanic.R script uses the same package and is almost similar to the IrisSvm.R script.
 
 The Titanic dataset comes with an extra unwanted attribute called “frequency” during conversion into a data structure that is readable. We will add a piece of code to remove this attribute and will use the NaiveBayes model instead of the SVM model.
 
-#####  NaiveBayesTitanic.R
+##### NaiveBayesTitanic.R
 
 ```
 library(e1071)
@@ -42,8 +40,6 @@ confusionMatrix(xtab)
 _Copy paste this code in the NaiveBayes.R script. _
 
 We can run the entire script just by clicking on the button **Source -&gt;Source with Echo.** \(No need to select any lines in the script like we did with the Run button! \)
-
-
 
 ```
 FUN: You deserve a break!! See the Towers of Hanoi in motion. (Make sure the "PLOTS" TAB IS ENABLED)
