@@ -9,7 +9,7 @@ Now that we have explored the IRIS dataset, let us create a decision tree.
   _ You will see the ‘party’ package and a list of dependent packages loading._
 
 * **Step 2: Let us now load the IRIS dataset that is available in R.**  
-  &gt; data\(“iris”\)  
+  &gt; data\(iris\)  
   _ You will see the IRIS dataset is loaded in the Environment and Workspace area._
 
 * **Step 3: Let us create the input data frame and assign the IRIS dataset to it.**  
