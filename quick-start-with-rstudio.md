@@ -20,6 +20,10 @@ Let’s have a quick look at the Rstudio IDE. It will help you to navigate the I
 
 * IF YOUR SESSION RESTARTS, LOAD ALL YOUR PACKAGES ONCE AGAIN!! \(using the **library\(NameOfPkg\) **command\)
 
+* Clear the console: **Ctrl+L**
+
+* Clear the workspace: **rm\(list = ls\(\)\)**
+
 ![](https://lh3.googleusercontent.com/NK3UvE4LqANT6c592rzjRrIWqHnIC-hgf_BhSxZK2V6yu4PGv05rmKqd_4qE7phQgMrYoOldJd2jE8S9nxtTZ2BFs74fJSo3HF2lLty8FkcAZj2C2DwuxWJXhpdI9Y587LGW11Q "rstudio.png")
 
 * **Code Editor-** The place to write your scripts and for viewing data structures using the View command. It contains buttons for running the entire script or for running it line-by-line.
