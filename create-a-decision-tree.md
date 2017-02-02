@@ -34,7 +34,7 @@ Now that we have explored the IRIS dataset, let us create a decision tree.
 
 ![](https://docs.google.com/drawings/d/sCfSrNc_JtuTy3MSEBnTYNg/image?w=465&h=173&rev=9&ac=1)
 
-```
+```R
 FUN: Want a quick random password to satisfy the annoying Sign-ups?                                                                                           
 > random_password(length = 12, replace = FALSE, extended = TRUE)
 ```
