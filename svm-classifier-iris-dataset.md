@@ -30,7 +30,7 @@ Let us start by _loading_ all of the required packages and data.
 library(e1071)
 library(caret)
 data("iris")
-input=iris;
+input=iris
 ```
 
 Paste the code block in the_ IrisSvm.R_ script area. Select the lines that you just pasted and click on the Run button. \(Refer to below image\).
